@@ -3,12 +3,12 @@ import React, { useState } from "react";
 
 export function CreateNote() {
   const [title, setTitle] = useState("");
-  const [note, setNote] = useState("");
+  const [content, setContent] = useState("");
 
   const onSave = () => {
     console.log("value: ", title);
     setTitle("");
-    setNote("");
+    setContent("");
   };
 
   return (
@@ -40,8 +40,8 @@ export function CreateNote() {
             label="Note"
             variant="outlined"
             minRows={15}
-            value={note}
-            onChange={(e) => setNote(e.target.value)}
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
           />
         </div>
 
