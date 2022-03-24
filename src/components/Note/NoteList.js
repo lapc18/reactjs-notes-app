@@ -20,7 +20,7 @@ export function NoteList() {
 
   const renderEmptyNotes = (
     <Grid item xs={12} sm={6}>
-      <Typography variant="h3" align="justify">
+      <Typography variant="h3" align="center">
         No notes added:)
       </Typography>
     </Grid>
